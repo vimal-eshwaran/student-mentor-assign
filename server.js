@@ -2,13 +2,13 @@ const express=require('express')
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors=require('cors');
-const connectDB =require('./connection')
+const connectDB =require('./connection.js')
 
 require("dotenv").config();
 
 //Importing the models
-const Mentor = require("./mentor");
-const Student = require("./student");
+const Mentor = require("./mentor.js");
+const Student = require("./student.js");
 const app = express();
 app.use(cors());
 const PORT = process.env.PORT;
